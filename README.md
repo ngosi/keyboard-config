@@ -1,5 +1,5 @@
 # My Graphite Keyboard Layout
-I decided to learn the **Graphite** keyboard layout and this is the **Kanata** config I ended up creating on my ***ThinkPad t480s*** laptop. *Part of my [dotfiles](https://github.com/ngosi/.dotfiles) repo.*
+I decided to learn the **[Graphite](https://github.com/rdavison/graphite-layout)** keyboard layout, so this is the **[Kanata](https://github.com/jtroo/kanata)** config I ended up creating on my ***ThinkPad t480s*** laptop. *Part of my [dotfiles](https://github.com/ngosi/.dotfiles) repo.*
 
 ## Features
 - Toggleable Qwerty Layout
@@ -16,7 +16,7 @@ I decided to learn the **Graphite** keyboard layout and this is the **Kanata** c
     * **Alt+Right:** next page
 - Changed `` ` `` to be `~` by default
 
-## **Vanilla Laptop Keyboard**
+## **Vanilla Laptop Keyboard:**
 ```
     esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12 home end  ins  del
     grv  1    2    3    4    5    6    7    8    9    0    -    =         bspc
@@ -78,7 +78,7 @@ This is what I change from the vanilla layer to get my home row mods and other c
 - *md2:*
     * **Tap** = regular key
     * **Hold** = num layer
-    * **Double-tap** = regular key *(useful for regular hold key behavior when desired)*
+    * **Double-tap** = numpad layer
 - *md3:*
     * **Tap** = repeat key
     * **Hold** = function layer
@@ -109,6 +109,18 @@ Provides easy access to navigation keys, as well as other useful keys. Does not 
 - Access to media keys as well as brightness keys
 - Access to some minorly useful mouse keys as well as the regular lock keys just in case.
 
+### **Num**
+```
+    _    _    _    _   _   _   _   _   _   _   _   _   _   _    _    _    _
+    _    _    _    _    _    _    _    _    _    _    _    _    _         _
+    _         _    _    _    _    _    _    _    _    _    _    _    _    _
+    _         1    2    3    4    5    6    7    8    9    0    _         _
+    _         _    _    _    _    _    _    _    _    _    _              _
+    _    _    _    bspc           _              lsft _    _    _    _    _
+                                                                _    _    _
+```
+Moves the numbers at the top of the keyboard down to your fingers, so you don't have to reach for them. You can use *lsft* to access their symbols if you want to. Home row mods are still usable if you hold them before entering this layer making a lot of shortcuts more convenient, especially ones for switching windows.
+
 ### **Numpad**
 ```
     _    _    _    _   _   _   _   _   _   _   _   _   _   _    _    _    _
@@ -137,6 +149,8 @@ Numpad with some custom keys.
                                                                 _    _    _
 ```
 Symbol layer with access to all the bracket types by finger.
+- *op:* Opening parenthesis
+- *cp:* Closing parenthesis
 
 ### **Function**
 ```
@@ -185,7 +199,7 @@ This is what I use when watching YouTube while using **Graphite** layout.
     * The idea behind the script is to have a patch file generated beforehand using `git diff` that is then applied by the script.
     * Script file can be found [here](https://github.com/ngosi/.dotfiles/blob/main/scripts/graphite2qwerty.sh).
     * Patch file can be found [here](https://github.com/ngosi/.dotfiles/blob/main/patches/graphite2qwerty.patch).
-- *kanata.service* makes it, so you don't have to manually launch **Kanata** every system start.
+- *kanata.service* makes it so you don't have to manually launch **Kanata** every system start.
 - *zippy.txt* has zippy chords for frequently used text. Mine looks something like this:
 ```txt
 us 1	Username1
